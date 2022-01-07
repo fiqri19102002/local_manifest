@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!-- Trees -->
+<project path="device/xiaomi/ginkgo" name="fiqri19102002/android_device_xiaomi_ginkgo.git" remote="github" revision="evox-12" />
+<project path="vendor/xiaomi/ginkgo" name="fiqri19102002/android_vendor_xiaomi_ginkgo.git" remote="github" revision="arrow-12.0" />
+<project path="kernel/xiaomi/ginkgo" name="fiqri19102002/android_vendor_xiaomi_ginkgo.git" remote="github" revision="inline-rom" />
+<project path="vendor/miuicamera" name="fiqri19102002/android_vendor_miuicamera.git" remote="github" revision="arrow-12.0-a3" />
+
+</manifest>
