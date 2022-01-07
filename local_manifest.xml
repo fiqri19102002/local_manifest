@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+    <remote  name="fiqri19102002"
+            fetch="https://github.com/fiqri19102002" />
+
 <!-- Trees -->
 <project path="device/xiaomi/ginkgo" name="fiqri19102002/android_device_xiaomi_ginkgo.git" remote="github" revision="evox-12" />
 <project path="vendor/xiaomi/ginkgo" name="fiqri19102002/android_vendor_xiaomi_ginkgo.git" remote="github" revision="arrow-12.0" />
