@@ -13,4 +13,7 @@
 <!-- Kernel tree -->
 <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo.git" remote="fiqri19102002" revision="inline-rom" />
 
+<!-- Remove some HALs -->
+<remove-project name="android_hardware_xiaomi" />
+
 </manifest>
