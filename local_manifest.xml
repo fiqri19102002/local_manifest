@@ -22,7 +22,4 @@
 <!-- Proton Clang --> 
 <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang.git" remote="kdrag0n" revision="master" />
 
-<!-- Remove some project -->
-<remove-project name="ArrowOS-Devices/android_hardware_xiaomi" />
-
 </manifest>
