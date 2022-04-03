@@ -7,6 +7,9 @@
     <remote name="kdrag0n"
             fetch="https://github.com/kdrag0n" />
 
+    <remote name="Arrow"
+            fetch="https://github.com/ArrowOS" />
+
 <!-- Device tree -->
 <project path="device/xiaomi/ginkgo" name="android_device_xiaomi_ginkgo.git" remote="fiqri19102002" revision="evox-12L" />
 
@@ -19,10 +22,14 @@
 <!-- MIUI camera tree -->
 <project path="vendor/miuicamera" name="android_vendor_miuicamera.git" remote="fiqri19102002" revision="arrow-12.1-a3" />
 
-<!-- Proton Clang --> 
+<!-- Proton Clang -->
 <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang.git" remote="kdrag0n" revision="master" />
 
 <!-- Remove some project -->
 <remove-project name="ArrowOS-Devices/android_hardware_xiaomi" />
+<remove-project name="LineageOS/android_hardware_qcom_display" />
+
+<!-- Use fix HAL for trinket -->
+<project name="android_hardware_qcom_display" path="hardware/qcom-caf/sm8150/display" remote="Arrow" groups="pdk-qcom,qcom,qcom_display"  revision="arrow-12.1-caf-sm8150" />
 
 </manifest>
