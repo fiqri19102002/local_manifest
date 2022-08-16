@@ -4,22 +4,16 @@
     <remote name="fiqri19102002"
             fetch="https://github.com/fiqri19102002" />
 
-    <remote name="kdrag0n"
-            fetch="https://github.com/kdrag0n" />
+    <remote name="pe-devices"
+            fetch="https://github.com/PixelExperience-Devices" />
 
 <!-- Device tree -->
-<project path="device/xiaomi/ginkgo" name="android_device_xiaomi_ginkgo.git" remote="fiqri19102002" revision="arrow-12.1" />
+<project path="device/xiaomi/mojito" name="android_device_xiaomi_mojito.git" remote="fiqri19102002" revision="arrow-12.1" />
 
 <!-- Vendor tree -->
-<project path="vendor/xiaomi/ginkgo" name="android_vendor_xiaomi_ginkgo.git" remote="fiqri19102002" revision="arrow-12.1" />
+<project path="vendor/xiaomi/mojito" name="android_vendor_xiaomi_mojito.git" remote="fiqri19102002" revision="lineage-19.1" />
 
 <!-- Kernel tree -->
-<project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo.git" remote="fiqri19102002" revision="inline-rom" />
-
-<!-- MIUI camera tree -->
-<project path="vendor/miuicamera" name="android_vendor_miuicamera.git" remote="fiqri19102002" revision="arrow-12.1-a3" />
-
-<!-- Proton Clang --> 
-<project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang.git" remote="kdrag0n" revision="master" />
+<project path="kernel/xiaomi/mojito" name="kernel_xiaomi_mojito.git" remote="pe-devices" revision="twelve" />
 
 </manifest>
