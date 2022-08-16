@@ -7,6 +7,9 @@
     <remote name="pe-devices"
             fetch="https://github.com/PixelExperience-Devices" />
 
+    <remote name="arrow-mojito"
+            fetch="https://github.com/Arrow-mojito" />
+
 <!-- Device tree -->
 <project path="device/xiaomi/mojito" name="android_device_xiaomi_mojito.git" remote="fiqri19102002" revision="arrow-12.1" />
 
@@ -15,5 +18,17 @@
 
 <!-- Kernel tree -->
 <project path="kernel/xiaomi/mojito" name="kernel_xiaomi_mojito.git" remote="pe-devices" revision="twelve" />
+
+<!-- Remove some repo. -->
+<remove-project name="android_frameworks_base" />
+<remove-project name="android_packages_apps_Settings" />
+<remove-project name="android_packages_apps_GameSpace" />
+<remove-project name="android_device_arrow_sepolicy" />
+
+<!-- Replacements -->
+<project path="frameworks/base" name="android_frameworks_base" remote="arrow-mojito" revision="arrow-12.1" />
+<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="arrow-mojito" revision="arrow-12.1" />
+<project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="arrow-mojito" revision="arrow-12.1" />
+<project path="device/arrow/sepolicy" name="android_device_arrow_sepolicy" remote="arrow-mojito" revision="arrow-12.1" />
 
 </manifest>
