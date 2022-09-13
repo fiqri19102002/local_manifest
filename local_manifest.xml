@@ -4,31 +4,41 @@
     <remote name="fiqri19102002"
             fetch="https://github.com/fiqri19102002" />
 
+    <remote name="kdrag0n"
+            fetch="https://github.com/kdrag0n" />
+
+    <remote name="arrowos"
+            fetch="https://github.com/ArrowOS" />
+
+    <remote name="pixelos"
+            fetch="https://github.com/PixelOS-Pixelish" />
+
     <remote name="pe-devices"
             fetch="https://github.com/PixelExperience-Devices" />
 
-    <remote name="arrow-mojito"
-            fetch="https://github.com/Arrow-mojito" />
-
 <!-- Device tree -->
-<project path="device/xiaomi/mojito" name="android_device_xiaomi_mojito.git" remote="fiqri19102002" revision="arrow-12.1" />
+<project path="device/xiaomi/mojito" name="android_device_xiaomi_mojito.git" remote="fiqri19102002" revision="tiramisu" />
 
 <!-- Vendor tree -->
-<project path="vendor/xiaomi/mojito" name="android_vendor_xiaomi_mojito.git" remote="fiqri19102002" revision="lineage-19.1" />
+<project path="vendor/xiaomi/mojito" name="android_vendor_xiaomi_mojito.git" remote="fiqri19102002" revision="lineage-20.0" />
 
 <!-- Kernel tree -->
 <project path="kernel/xiaomi/mojito" name="kernel_xiaomi_mojito.git" remote="pe-devices" revision="twelve" />
 
+<!-- Proton Clang --> 
+<project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang.git" remote="kdrag0n" revision="master" />
+
 <!-- Remove some repo. -->
-<remove-project name="android_frameworks_base" />
-<remove-project name="android_packages_apps_Settings" />
-<remove-project name="android_packages_apps_GameSpace" />
-<remove-project name="android_device_arrow_sepolicy" />
+<remove-project name="frameworks_base" />
+<remove-project name="vendor_evolution" />
+<remove-project name="android_hardware_qcom_bootctrl" />
+<remove-project name="android_device_qcom_sepolicy" />
+<remove-project name="hardware_xiaomi" />
 
 <!-- Replacements -->
-<project path="frameworks/base" name="android_frameworks_base" remote="arrow-mojito" revision="arrow-12.1" />
-<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="arrow-mojito" revision="arrow-12.1" />
-<project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="arrow-mojito" revision="arrow-12.1" />
-<project path="device/arrow/sepolicy" name="android_device_arrow_sepolicy" remote="arrow-mojito" revision="arrow-12.1" />
+<project path="frameworks/base" name="frameworks_base" remote="fiqri19102002" revision="tiramisu" />
+<project path="vendor/evolution" name="vendor_evolution" remote="fiqri19102002" revision="tiramisu" />
+<project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" remote="arrowos" revision="arrow-13.0-caf" />
+<project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="pixelos" revision="thirteen" />
 
 </manifest>
